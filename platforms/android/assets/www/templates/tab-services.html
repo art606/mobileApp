@@ -1,0 +1,18 @@
+﻿<ion-view view-title="Service" >
+    <ion-content class="has-subheader">
+     
+        <ion-list>
+        <ion-item ng-repeat="service in services.services" type="item-text-wrap" href="#/tab/branches/{{service.branchId}}/services/{{service._id}}">
+            <h2>Service name: {{service.name}}</h2>
+            <a class="button icon-left ion-man button-clear button-dark">Description {{service.description}}</a>
+        </ion-item>
+
+        </ion-list>
+    </ion-content>
+</ion-view>
+
+
+
+
+
+

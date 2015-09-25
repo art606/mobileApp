@@ -1,0 +1,29 @@
+﻿
+<ion-view view-title="Ticket">
+
+    <ion-content class="has-subheader">
+
+        <ion-item type="item-text-wrap">
+            <p>Status: {{ticket.status}}</p>
+        </ion-item>
+        
+
+        <div class="card">
+            <div class="item item-divider">
+                Your ticket number:
+            </div>
+            <div class="item item-text-wrap">
+                {{ticket.letter}}{{ticket.number}}
+            </div>
+        </div>
+            
+        <div class="row">
+            <div class="col text-center">
+                <button class="button icon-left ion-ios-trash-outline button-assertive" 
+                        ng-click="removeTicket()">Cancel service
+                </button>
+            </div>
+        </div>
+</ion-content>
+
+</ion-view>

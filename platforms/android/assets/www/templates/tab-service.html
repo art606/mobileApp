@@ -1,0 +1,30 @@
+﻿<ion-view view-title="Service info">
+    <ion-content class="has-subheader">
+
+        <ion-list>
+            <ion-item type="item-text-wrap">
+                <h2>You are in {{branchesData.name}}</h2>
+            </ion-item>
+            <ion-item type="item-text-wrap">
+                <h2>Your service:  {{service.name}}</h2>
+            </ion-item>
+                <ion-item type="item-text-wrap">
+                    <a class="button icon-left ion-man button-clear button-dark">Description: {{service.description}}</a>
+                </ion-item>
+            <ion-item type="item-text-wrap">
+                    <center>Make sure that want this ticket</center>
+            </ion-item>
+
+        </ion-list>
+
+        <div class="row">
+            <div class="col text-center" >
+                <button class="button button-outline button-balanced button-large" ng-click="createTicket(service.branchId, service._id)";> 
+                    Get the ticket
+                </button>
+            </div>
+        </div>
+
+    </ion-content>>
+
+</ion-view>
